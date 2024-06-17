@@ -1,0 +1,12 @@
+---
+### Installation
+- name: "Be sure openssl is at its latest version (APT based)"
+  ansible.builtin.apt:
+    pkg: "{{ openssl_apt_packages }}"
+    state: "{{ openssl_apt_state }}"
+  become: true
+  when: ansible_pkg_mgr == 'apt'
+  tags:
+    - install
+
+### Configuration

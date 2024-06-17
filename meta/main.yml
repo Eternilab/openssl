@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: openssl
+  namespace: eternilab
+  author: "Sylvain Leroy <sylvain.leroy@eternilab.com>"
+  description: Installation du paquet openssl sous Debian
+  min_ansible_version: "2.14"
+  company: "Eternilab"
+  license: "MIT"
+  platforms:
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - ssl
+    - tls
+    - openssl

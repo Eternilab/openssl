@@ -1,0 +1,6 @@
+---
+- name: "Handling openssl role"
+  ansible.builtin.import_tasks: openssl.yml
+  when: ansible_pkg_mgr == 'apt'
+  tags:
+    - openssl

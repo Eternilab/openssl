@@ -1,0 +1,4 @@
+---
+openssl_apt_state: latest
+openssl_apt_packages:
+  - openssl
